@@ -1,0 +1,387 @@
+ *{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body{
+    background-color: #f2f4f5;
+}
+
+
+/* <!-- ===================================== * Navbar * ======================================== --> */
+
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: lightblue;
+    box-shadow: 0 0 2px lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bolder;
+}
+.header .logo span{
+    color: yellow
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    /* width: 1300px; */
+    margin: auto;
+    height: 10vh;
+}
+
+
+.state_select{
+    margin-left: 70px;
+    width: 250px;
+}
+
+.select i{
+  font-size: 15px; 
+  transition: all 0.3s; 
+}
+
+.select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 6px 6px 6px 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: #cdeffc;
+}
+
+.option p{
+    margin-left: 10px;
+    color: #444444;
+}
+
+.option i{
+    color: #839a9c;  
+}
+
+.option_box{
+    box-shadow: 0 0 20 grey;
+    background-color: white;
+    border-radius: 6px 6px 6px 6px;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+.hidden{
+    display: block;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.search_box{
+    display: flex;
+    margin-left: 30px;
+}
+
+.search_box i{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.searchclass{
+    padding: 10px;
+    width: 300px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px 0 0 6px;
+}
+
+.notification i{
+    font-size: 22px;
+    cursor: pointer;
+    margin: 35px;
+}
+
+.img img {
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 55px;
+}
+
+.namnimg img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.namnimg p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.namnimg{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.dropdown{
+    width: 250px;
+    box-shadow: 0 0 10px grey;
+    padding: 20px;
+    background-color: white;
+    border-radius: 3%;
+    display: none;
+    position: absolute;
+    top: 120px;
+}
+
+ .dropdown ul li{ 
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover{
+    background-color:  #cdeffc;
+}
+
+.dropdown ul{
+    margin: 20px;
+}
+
+.dropdown ul li i{
+    color: black;
+    font-size: 17px;
+}
+
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 17px;
+
+}
+
+.block_div{
+    display: block;
+}
+
+.selling_page{
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: orangered;
+    border-left-color: yellowgreen;
+    border-right-color:darkgreen;
+    border-bottom-color:darkblue;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+/* <!-- ===================================== * Navbar * ======================================== --> */
+
+
+/* <!-- ===================================== * Product img * ======================================== --> */
+
+.Product_img{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.image_description{
+    width: 600px;
+}
+
+.image_description img{
+    width: 600px;
+    border-radius: 5px;
+}
+#prev{
+    color: white;
+}
+
+#next{
+    color: white;
+}
+
+/* <!-- ===================================== * Description * ======================================== --> */
+
+.description{
+    padding-left: 20px;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding-bottom: 15px;
+}
+
+.description h3{
+    padding: 10px 10px 10px 0;
+    font-size: 20px;
+}
+
+.description p{
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+
+/* <!-- ===================================== * Product Details * ======================================== --> */
+
+.product_details{
+    width: 400px;
+    margin-left: 10px;
+}
+
+  /* <!-- ===================================== * Box1 * ======================================== --> */
+
+.box{
+    background-color: white;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 5px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.price p{
+    font-size: 25px;
+    font-weight: normal;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box span{
+    color: #757674;
+    padding: 0 0 10px 10px;
+}
+
+.Location{
+    font-size: 13px;
+    padding: 15px 10px 15px 10px;
+}
+
+  /* <!-- ===================================== * Box2 * ======================================== --> */
+
+.seller_detail img{
+    width: 55px;
+    border-radius: 50%;
+    margin: 10px 10px 8px 10px;
+}
+
+.seller_detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.seller_description{
+    font-size: 17px;
+    color: #212f34;
+    padding: 10px 0 5px 10px;
+}
+
+.seller_detail h2{
+    font-size: 18px;
+}
+
+.seller_detail p{
+    font-size: 13px;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 122px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.box a:hover{
+    border: 4px solid black;
+}
+
+#box2{
+    height: 170px;
+    margin-top: 10px;
+}
+
+  /* <!-- ===================================== * Box3 * ======================================== --> */
+
+  #box3{
+    margin-top: 10px;
+  }
+
+  #box3 h2{
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  #box3 p{
+    font-size: 13px;
+    padding: 0 0 10px 15px;
+  }
+
+  #box3 img{
+    width: 390px;
+    padding: 0 15px;
+    padding-bottom: 10px;
+  }
+
+
+
+
+
+
+
+
+
