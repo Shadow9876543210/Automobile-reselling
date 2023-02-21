@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WheelsZone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <!-- ===================================== * navbar * ======================================== -->
+
+    <header class="header">
+      <div class="navbar">
+        <a href="#" class="logo"><span>Wheels</span>Zone</a>
+        <br /><br />
+        <div class="state_select" id="state">
+          <div class="select">
+            <p id="text">select your state</p>
+            <i class="fa-solid fa-chevron-down" id="moving"></i>
+          </div>
+
+          <ul class="option_box" id="list">
+            <li class="option" onclick="myfunction('Maharashtra')">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Maharashtra</p>
+            </li>
+            <li class="option" onclick="myfunction('Gujarat')">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Gujarat</p>
+            </li>
+            <li class="option" onclick="myfunction('Tamil Nadu')">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Tamil Nadu</p>
+            </li>
+            <li class="option" onclick="myfunction('Uttar Pradesh')">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Uttar Pradesh</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search_box">
+          <input
+            type="text"
+            class="searchclass"
+            id="searchid"
+            placeholder="Find Cars, Bike, Cycle and more...."
+          />
+          <p><i class="fa-solid fa-magnifying-glass"></i></p>
+        </div>
+
+        <div class="notification">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="profile_logo">
+          <div class="img" id="img_id">
+            <img src="w2-bg.png" />
+          </div>
+
+          <div class="dropdown" id="dropdownid">
+            <div class="namnimg">
+              <img src="w2-bg.png" />
+              <p>wrench</p>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-regular fa-user"></i>
+                <p>My Account</p>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-box"></i>
+                <p>My Orders</p>
+              </li>
+
+              <li>
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Help</p>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-gears"></i>
+                <p>Setting</p>
+              </li>
+
+              <li>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="selling_page">
+          <button>
+            <i class="fa-solid fa-plus"></i>
+            <p>SELL</p>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================== * navbar * ======================================== -->
+
+    <!-- ===================================== * Product img * ======================================== -->
+
+    <div class="Product_img">
+      <div class="image_description">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Audi.jpg" alt="Audi" /></div>
+            <div class="swiper-slide"><img src="Audi1.jpg" alt="Audi1" /></div>
+            <div class="swiper-slide"><img src="Audi2.jpg" alt="Audi2" /></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev" id="prev"></div>
+          <div class="swiper-button-next" id="next"></div>
+        </div>
+
+        <div class="description">
+          <h3>Description</h3>
+          <br />
+          <p>
+            ?AUDI Q3•2013 MODEL•SECOND OWNER•75000 KILOMETER•BOTH KEYS ?<br />
+            •PREMIUM PLUS•HR10 REGISTERED•NEW TYRES•INSURANCE AVAILABLE <br />
+            ADDITIONAL VEHICLE INFORMATION:
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- ===================================== * Product img * ======================================== -->
+
+      <div class="product_details">
+        <div class="box">
+          <div class="price">
+            <h3>₹ 9,99,999</h3>
+            <div>
+              <p><i class="fa-sharp fa-solid fa-share"></i></p>
+              <p><i class="fa-regular fa-heart"></i></p>
+            </div>
+          </div>
+          <span>Audi Car</span>
+          <div class="Location">
+            <p>Bandra East, Mumbai, Maharashtra</p>
+          </div>
+        </div>
+
+        <div class="box" id="box2">
+          <p class="seller_description">Seller Description</p>
+          <div class="seller_detail">
+            <img src="w1-bg.png" alt="sellers image" />
+            <div>
+              <h2>Mohit</h2>
+              <p>member since december 2021</p>
+            </div>
+          </div>
+          <a href="chatbox.html">Chat with Seller</a>
+        </div>
+
+        <div class="box" id="box3">
+          <h2>Posted In</h2>
+          <p>Bandra East,Mumbai</p>
+          <img src="location.png" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      let state = document.getElementById("state");
+      let moving = document.getElementById("moving");
+      let text = document.getElementById("text");
+      let list = document.getElementById("list");
+
+      state.addEventListener("click", () => {
+        list.classList.toggle("hidden");
+        moving.classList.toggle("rotate");
+
+        function newFunction() {
+          return "hidden";
+        }
+      });
+
+      function myfunction(mohit) {
+        text.innerHTML = mohit;
+      }
+
+      let img_id = document.getElementById("img_id");
+      let dropdownid = document.getElementById("dropdownid");
+
+      img_id.addEventListener("click", () => {
+        dropdownid.classList.toggle("block_div");
+      });
+
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

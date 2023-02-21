@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WheelsZone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/regular.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+        
+        <link rel="icon" href="https://i.postimg.cc/QN5x6yV7/w1-bg.png" type="image/png">
+        
+        <!--Custom css file link-->
+        <link rel="Stylesheet" href="style.css">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+
+    <!-- ===================================== * navbar * ======================================== -->
+    <header class="header"> 
+        <div class="navbar">
+            
+            <a href="#" class="logo"><span>Wheels</span>Zone</a>
+            <br><br>
+            <div class="state_select" id="state">
+                <div class="select">
+                    <p id="text">select your state</p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option"onclick="myfunction('Maharashtra')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Maharashtra</p>
+                    </li>
+                    <li class="option"onclick="myfunction('Gujarat')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Gujarat</p>
+                    </li>
+                    <li class="option"onclick="myfunction('Tamil Nadu')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Tamil Nadu</p>
+                    </li>
+                    <li class="option"onclick="myfunction('Uttar Pradesh')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Uttar Pradesh</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid"
+                placeholder="Find Cars, Bike, Cycle and more....">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="profile_logo">
+                    <div class="img" id="img_id">
+                        <img src="w2-bg.png">
+                    </div>
+                    
+                    <div class="dropdown" id="dropdownid">
+                        <div class="namnimg">
+                          <img src="w2-bg.png">
+                            <p>wrench</p>
+                        </div>
+                        <ul>
+
+                            <li><i class="fa-solid fa-right-to-bracket"></i><a href="login.html" target="_blank"><p>Login</p></a></li>
+
+                            <li><i class="fa-regular fa-user"></i><a href="https://www.google.com/" target="_blank"><p>My Account</p></a></li>
+                            
+                            <li><i class="fa-solid fa-box"></i><a href="https://www.amazon.com/" target="_blank"><p>My Orders</p></a></li>
+                            
+                            <li><i class="fa-regular fa-circle-question"></i><a href="https://www.Myntra.com/" target="_blank"><p>Help</p></a></li>
+                          
+                            <li><i class="fa-solid fa-gears"></i><a href="https://www.flipkart.com/" target="_blank"><p>Setting</p></a></li>
+                            
+                            <li><i class="fa-solid fa-right-from-bracket"></i><a href="https://www.youtube.com/" target="_blank"><p>Log Out</p></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="selling_page">
+                    <button><i class="fa-solid fa-plus"></i>
+                    <p>SELL</p></button>
+                </div>
+        </div>            
+    </header>        
+        <!-- ===================================== * navbar * ======================================== -->
+
+        <!-- ===================================== * ad1 * ======================================== -->
+        
+        <div class="ad_img">
+            <img src="ad1.jpeg" alt="ad1">
+            <i class="fa-solid fa-circle-xmark" id="ad_icon"></i>  
+        </div>
+
+        <!-- ===================================== * Product * ======================================== -->
+        <div class="product">
+            <div class="first_row">
+                <div class="box">
+                    <a href="product.html"></a>
+                    <img src="Audi.jpeg">
+                    <h2>₹ 9,99,999</h2>
+                    <p>Audi A4,2013,diesel</p>
+                    <div class="addres_data">
+                    <p>Bandra East,Mumbai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#"></a>
+            <img src="xsuv.jpg">
+            <h2>₹ 8,65,000</h2>
+            <p>Mahindra xsuv 500,2015,diesel</p>
+            <div class="addres_data">
+            <p>Surat,Gujarat</p>
+            </div>
+        </div>
+        <div class="box">
+            <a href="#"></a>
+            <img src="download.jpeg">
+            <h2>₹ 3,65,000</h2>
+            <p>Wegnar lxi</p>
+            <div class="addres_data">
+            <p>Lucknow,Uttar Pradesh</p>
+            </div>
+        </div>
+        <div class="box">
+            <a href="#"></a>
+            <img src="Shine.jpg">
+            <h2>₹ 65,000</h2>
+            <p>CB Shine</p>
+            <div class="addres_data">
+            <p>Gandhi Nagar,Gujarat</p>
+            </div>
+        </div>
+    
+        <div class="first_row">
+            <div class="box">
+                <a href="#"></a>
+                <img src="Apache.jpeg">
+                <h2>₹ 55,000</h2>
+                <p> TVS Apache RTR 200 CC</p>
+                <div class="addres_data">
+                <p>Thane East,Maharashtra</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <a href="#"></a>
+        <img src="download.jpeg">
+        <h2>₹ 3,95,000</h2>
+        <p>Wagnar lxi,diesel + CNG</p>
+        <div class="addres_data">
+        <p>Jaipur,Rajasthan</p>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#"></a>
+        <img src="Hondascooty1.jpeg">
+        <h2>₹ 45,000</h2>
+        <p>Honda Activa 4G,Petrol</p>
+        <div class="addres_data">
+        <p>Mirzapur,Uttar Pradesh</p>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#"></a>
+        <img src="pulsar1505.jpg">
+        <h2>₹ 75,000</h2>
+        <p>Pulsar 150,2017,diesel</p>
+        <div class="addres_data">
+        <p> Prayag city,UP</p>
+        </div>
+    </div>
+
+    <div class="first_row">
+        <div class="box">
+            <a href="#"></a>
+            <img src="yamaha-yzf.jpg">
+            <h2>₹ 1,05,000</h2>
+            <p>Yamaha yzf,2015,Petrol</p>
+            <div class="addres_data">
+            <p>Kolkata,West Bengal</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box">
+    <a href="#"></a>
+    <img src="electric cycle1.jpg">
+    <h2>₹ 15,000</h2>
+    <p>Hero Electric Cycle h5,2022,Battery</p>
+    <div class="addres_data">
+    <p>Bhopal,Madhya Pradesh</p>
+    </div>
+</div>
+<div class="box">
+    <a href="#"></a>
+    <img src="cover_image-20221124155024.jpg">
+    <h2>₹ 9,25,000</h2>
+    <p>Mahindra xuv500</p>
+    <div class="addres_data">
+    <p>Mathura,Uttar Pradesh</p>
+    </div>
+</div>
+<div class="box">
+    <a href="#"></a>
+    <img src="jaguar.JPG">
+    <h2>₹ 11,00,000</h2>
+    <p>Jaguar I-Space SE,2016,diesel</p>
+    <div class="addres_data">
+    <p>Banglore,Karnataka</p>
+    </div>
+</div>
+
+<div class="first_row">
+    <div class="box">
+        <a href="#"></a>
+        <img src="bullet.jpg">
+        <h2>₹ 85,000</h2>
+        <p>Royal Enfield Bullet 350,2018,Petrol</p>
+        <div class="addres_data">
+        <p>Patna,Bihar</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="box">
+<a href="#"></a>
+<img src="FZ.jpg">
+<h2>₹ 75,000</h2>
+<p>Yamaha FZ,2019,Petrol</p>
+<div class="addres_data">
+<p>Lajpat Nagar,Delhi</p>
+</div>
+</div>
+<div class="box">
+<a href="#"></a>
+<img src="land_eover1.jpeg">
+<h2>₹ 60,65,000</h2>
+<p>Range Rover Velar,diesel</p>
+<div class="addres_data">
+<p>MBS,Delhi</p>
+</div>
+</div>
+
+<div class="box">
+<a href="#"></a>
+<img src="mg1.jpeg">
+<h2>₹ 8,65,000</h2>
+<p>Mg Zs Ev ,2019</p>
+<div class="addres_data">
+<p> Rewa,MP</p>
+</div>
+</div>
+
+  <!-- ===================================== * Footer * ======================================== -->
+
+<div class="main_footer">
+    <div class="footer">
+        <div class="footer_box">
+            <h2>POPULAR LOCATION</h2>
+            <P>Mumbai</P>
+            <P>Mirzapur</P>
+            <P>Pune</P>
+            <P>Kolkata</P>
+        </div>
+    </div>
+</div>
+
+<div class="footer_box">
+    <h2>TRENDING LOCATIONS</h2>
+    <P>Nashik</P>
+    <P>Chandigarh</P>
+    <P>Hyderabad</P>
+    <P>Bhopal</P>
+</div>
+
+<div class="footer_box">
+    <h2>ABOUT US</h2>
+    <P>About WheelsZone</P>
+    <P>Careers</P>
+    <P>Contact us</P>
+    <P>WheelsZone people</P>
+</div>
+
+<div class="footer_box">
+   <h2>WheelsZone</h2>
+    <P>Help</P>
+    <P>Sitemap</P>
+    <P>Legal & Privacy information</P>
+    <P>Blog</P>
+</div>
+
+
+ <!--Custom js link-->
+ <script>
+let state = document.getElementById('state');
+let moving = document.getElementById('moving');
+let text = document.getElementById('text');
+let list = document.getElementById('list');
+
+state.addEventListener('click',() =>{
+    list.classList.toggle('hidden');
+    moving.classList.toggle('rotate');
+
+    function newFunction() {
+        return 'hidden';
+    }
+});
+
+function myfunction(mohit){
+    text.innerHTML = mohit;
+}
+
+let img_id = document.getElementById('img_id');
+let dropdownid = document.getElementById('dropdownid');
+
+img_id.addEventListener('click', () =>{
+ dropdownid.classList.toggle('block_div')
+});
+
+// <!--===================================== * ad1 * ========================================-->
+
+
+let ad_img = document.querySelector('.ad_img');
+let ad_icon = document.getElementById('ad_icon');
+
+ad_icon.addEventListener('click', () => {
+    ad_img.style = 'display: none';
+});
+ </script>
+    </body>
+</html>

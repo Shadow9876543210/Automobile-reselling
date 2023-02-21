@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css">
+</head>
+<body>
+        <!-- ===================================== * navbar * ======================================== -->
+        <div class="chat-box">
+          <div class="chat-header">
+            <img class="user-logo" src="w1-bg.png" alt="User Logo">
+            <span class="user-name">User Name</span>
+            <button class="close-btn">&#x2716;</button>
+          </div>
+          <div class="chat-body">
+            <ul class="chat-messages">
+              <!-- Chat messages will be added dynamically here -->
+            </ul>
+          </div>
+          <div class="chat-footer">
+            <input type="text" placeholder="Type your message...">
+            <button class="send-btn">Send</button>
+          </div>
+        </div>
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script>
+            let state = document.getElementById('state');
+            let moving = document.getElementById('moving');
+            let text = document.getElementById('text');
+            let list = document.getElementById('list');
+            
+            state.addEventListener('click',() =>{
+                list.classList.toggle('hidden');
+                moving.classList.toggle('rotate');
+            
+                function newFunction() {
+                    return 'hidden';
+                }
+            });
+            
+            function myfunction(mohit){
+                text.innerHTML = mohit;
+            }
+            
+            let img_id = document.getElementById('img_id');
+            let dropdownid = document.getElementById('dropdownid');
+            
+            img_id.addEventListener('click', () =>{
+             dropdownid.classList.toggle('block_div')
+            });
+            </script>
+
+        // <!-- ===================================== * navbar * ======================================== -->
+</body>
+</html>
